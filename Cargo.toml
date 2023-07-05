@@ -1,0 +1,29 @@
+[package]
+name = "serde_json_examples"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# serde = { version = "1.0.166", features = ["derive"] }
+# serde_derive = "1.0.166"
+# serde_json = "1.0.99"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+
+[[examples]]
+name = "struct_serde_json"
+path = "examples/struct_serde_json.rs"
+
+[[examples]]
+name = "enum_serde_json"
+path = "examples/enum_serde_json.rs"
+
+[[examples]]
+name = "unit_struct_serde_json"
+path = "examples/unit_struct_serde_json.rs"
+
+[[examples]]
+name = "options"
+path = "examples/options.rs"
